@@ -1,0 +1,203 @@
+{
+    "meta": {
+        "width": 20,
+        "height": 20,
+        "start_pos": [
+            0,
+            0
+        ]
+    },
+    "locations": {
+        "0,0": "The Nile Banks",
+        "0,1": "River Path",
+        "0,2": "River Path",
+        "1,2": "Dune Entrance",
+        "2,2": "Burning Sands",
+        "3,2": "Burning Sands",
+        "4,2": "Burning Sands",
+        "5,2": "Oasis Junction",
+        "5,3": "Palm Grove",
+        "5,4": "Palm Grove",
+        "5,5": "Oasis of Sobek",
+        "6,2": "Arid Trail",
+        "7,2": "Arid Trail",
+        "8,2": "Arid Trail",
+        "9,2": "Market Path",
+        "10,2": "Desert Trading Post",
+        "10,3": "The Great Waste",
+        "10,4": "The Great Waste",
+        "10,5": "The Great Waste",
+        "10,6": "The Great Waste",
+        "10,7": "The Great Waste",
+        "10,8": "The Great Waste",
+        "10,9": "The Foot of Giza",
+        "10,10": "Entrance to Giza",
+        "11,10": "Inner Corridor",
+        "12,10": "Inner Corridor",
+        "13,10": "Inner Corridor",
+        "14,10": "Inner Corridor",
+        "15,10": "Inner Corridor",
+        "15,9": "Sphinx Slope",
+        "15,8": "Sphinx Slope",
+        "15,7": "Sphinx Slope",
+        "15,6": "Sphinx Slope",
+        "15,5": "The Sphinx's Paw",
+        "11,11": "Chamber of Anubis",
+        "11,12": "Temple Hall",
+        "11,13": "Temple Hall",
+        "11,14": "Temple Hall",
+        "11,15": "Temple Hall",
+        "12,15": "High Plateau",
+        "13,15": "High Plateau",
+        "14,15": "High Plateau",
+        "15,15": "High Plateau",
+        "16,15": "High Plateau",
+        "17,15": "High Plateau",
+        "18,15": "High Plateau",
+        "18,16": "Ascent of Ra",
+        "18,17": "Ascent of Ra",
+        "18,18": "Altar of Ra",
+        "19,19": "The Burial Vault"
+    },
+    "descriptions": {
+        "0,0": "The life-giving Nile flows behind you. To the North, a river path leads toward the deep desert.",
+        "5,2": "A crossroads. North leads to a lush Oasis; East leads deeper into the trade routes.",
+        "5,5": "A lush sanctuary. Crocodile statues watch you from the water's edge. A tooth lies in the grass.",
+        "10,2": "A dusty tent filled with merchants. You must get a Copper Canteen here to survive the trek North.",
+        "10,9": "The heat is shimmering off the sand. You stand before Giza. Use your canteen to survive the crossing.",
+        "10,10": "The massive limestone blocks of the Great Pyramid loom over you. Exits lead North and East.",
+        "11,11": "The air is cool. Shadows move along the walls. A Priest stands guard. He speaks of the Solar Lens.",
+        "15,5": "A massive stone claw buried in the sand. A tablet rests between the talons.",
+        "18,18": "A high platform open to the sky. Use the Solar Lens here to reach the final vault.",
+        "19,19": "The air is thick with the scent of ancient incense. The Pharaoh's Mask glitters before you."
+    },
+    "items": {
+        "0,0": [
+            "Papyrus Scroll"
+        ],
+        "5,5": [],
+        "10,2": [
+            "Copper Canteen"
+        ],
+        "11,11": [
+            "Golden Ankh"
+        ],
+        "15,5": [
+            "Stone Tablet"
+        ],
+        "18,18": [
+            "Solar Lens"
+        ],
+        "19,19": [
+            "Pharaoh's Mask"
+        ]
+    },
+    "master_items": {
+        "0,0": [
+            "Papyrus Scroll"
+        ],
+        "5,5": [
+            "Crocodile Tooth"
+        ],
+        "10,2": [
+            "Copper Canteen"
+        ],
+        "11,11": [
+            "Golden Ankh"
+        ],
+        "15,5": [
+            "Stone Tablet"
+        ],
+        "18,18": [
+            "Solar Lens"
+        ],
+        "19,19": [
+            "Pharaoh's Mask"
+        ]
+    },
+    "item_flavor": {
+        "Papyrus Scroll": "A weathered map showing a path through the shifting dunes.",
+        "Copper Canteen": "Essential for the long trek North through the Great Waste.",
+        "Solar Lens": "A polished crystal. Stand on the Altar and 'use lens' to warp.",
+        "Pharaoh's Mask": "The ultimate prize! You have completed the adventure."
+    },
+    "events": {
+        "10,9": {
+            "req": "Copper Canteen",
+            "cmd": "use canteen",
+            "unlocks": [
+                10,
+                10
+            ],
+            "consume": false,
+            "warp": false
+        },
+        "18,18": {
+            "req": "Solar Lens",
+            "cmd": "use lens",
+            "unlocks": [
+                19,
+                19
+            ],
+            "consume": true,
+            "warp": true
+        }
+    },
+    "npcs": {
+        "11,11": {
+            "name": "Priest of Anubis",
+            "dialogue": "The Solar Lens is kept at the Altar (18,18). Use it there to find the King."
+        }
+    },
+    "visited": [
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            1
+        ],
+        [
+            0,
+            2
+        ],
+        [
+            1,
+            2
+        ],
+        [
+            2,
+            2
+        ],
+        [
+            3,
+            2
+        ],
+        [
+            4,
+            2
+        ],
+        [
+            5,
+            2
+        ],
+        [
+            6,
+            2
+        ],
+        [
+            5,
+            3
+        ],
+        [
+            5,
+            4
+        ],
+        [
+            5,
+            5
+        ]
+    ],
+    "unlocked": []
+}

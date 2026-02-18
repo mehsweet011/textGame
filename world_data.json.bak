@@ -1,0 +1,127 @@
+{
+    "meta": {
+        "width": 30,
+        "height": 30,
+        "start_pos": [
+            5,
+            5
+        ]
+    },
+    "locations": {
+        "5,5": "A pleasant glade",
+        "5,4": "A foot trail",
+        "5,3": "A foot trail",
+        "5,2": "A foot trail",
+        "5,1": "A foot trail",
+        "5,0": "Rocky path to lake",
+        "4,0": "A foot trail",
+        "3,0": "A foot trail",
+        "2,0": "A foot trail",
+        "1,0": "Trail ends cliff",
+        "0,0": "exit",
+        "6,0": "rocky shore line",
+        "7,0": "In the water"
+    },
+    "descriptions": {
+        "5,5": "You are surrounded by a forest and standing in the small clearing,where your bed crashed landed",
+        "5,4": "The winding foot trail leads through the forest",
+        "5,3": "The trail slops gently",
+        "5,2": "Over head trees makes the trail dark",
+        "5,1": "A foot trail",
+        "5,0": "Trail ends at a steep cliff",
+        "4,0": "A trail follows the cliff",
+        "3,0": "Loose rocks cover the trail",
+        "2,0": "A foot trail",
+        "1,0": "Trail approaches another cliff",
+        "0,0": "skip",
+        "6,0": "The stream flows into a lake against the cliff face",
+        "7,0": "You are up to your knees in the water"
+    },
+    "items": {
+        "5,5": [
+            "Boots",
+            "Fishing Net"
+        ],
+        "7,0": [
+            "net"
+        ]
+    },
+    "master_items": {
+        "5,5": [
+            "Boots",
+            "Fishing Net"
+        ]
+    },
+    "item_flavor": {
+        "Boots": "Water tight boots that would keep feet dry",
+        "Fishing Net": "exit"
+    },
+    "events": {
+        "7,0": {
+            "req": "Boots",
+            "cmd": "enter lake",
+            "unlocks": [
+                6,
+                0
+            ]
+        },
+        "6,0": {
+            "req": "Boots",
+            "cmd": "Wear",
+            "unlocks": [
+                7,
+                0
+            ],
+            "target": [
+                7,
+                0
+            ],
+            "warp": false
+        },
+        "5,5": {
+            "req": "boots",
+            "target": [
+                7,
+                0
+            ],
+            "warp": false
+        }
+    },
+    "npcs": {
+        "5,5": {
+            "name": "The Tooth Fairy",
+            "dialogue": [
+                "Giggle",
+                "Giggle giggle",
+                "Come play",
+                "Grrrrrr rahr!",
+                "Just kidding"
+            ],
+            "index": 1
+        },
+        "6,0": {
+            "dialogue": [],
+            "index": 0,
+            "name": "A mermaid"
+        }
+    },
+    "visited": [
+        "0,0",
+        "1,0",
+        "2,0",
+        "3,0",
+        "4,0",
+        "5,0",
+        "6,0"
+    ],
+    "unlocked": [],
+    "session_inventory": [],
+    "npc_descs": {
+        "6,0": "A beautiful maiden plays in the water, her fish tail splashes",
+        "5,5": "A confused little lady flutters around in the air"
+    },
+    "event_descs": {
+        "6,0": "You wouldn't want to get your feet wet",
+        "5,5": "Dont get your feet wet"
+    }
+}
